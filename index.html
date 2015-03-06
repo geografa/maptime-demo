@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta charset=utf-8 />
+<title>A simple map</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec nunc at neque lacinia pharetra. Integer tempus sagittis metus, eu volutpat justo cursus nec. Fusce ultrices orci sed ante vehicula et commodo dolor tpat. Phasellus orci sem, porttitor eu ultrices nec, aliquam eu odio. Nam ornare, metus a semper fringilla, sem elit venenatis lacus, sed fringilla arcu purus non arcu. Ut tempus lacus id nunc posuere feugiat. Vivamus ac nibh ipsum, vestibulum egestas risus..</p>
+
+
+<div id='map'></div>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiZ3JhZmEiLCJhIjoiU2U2QnIzUSJ9.4LnG05Ptvi1sUQ8t68rfgw';
+var map = L.mapbox.map('map', 'grafa.h2e9ii5l')
+    .setView([40, -74.50], 9);
+</script>
+
 </body>
 </html>
